@@ -1,0 +1,41 @@
+<comment> 
+{
+{//, \\n}
+{/*, */}
+}
+<keyword>
+{
+auto, enum, const, goto, double, case, float, default, 
+struct, register, unsigned, sizeof, int, typedef, short, 
+volatile, break, extern, continue, if, else, char, for, 
+do, switch, return, void, static, long, union, signed, 
+while
+}
+<math_op>
+{
++, -, *, /, %, ++, --
+}
+<bool_op>
+{
+==, !=, >, <, >=, <=
+}
+<logic_op>
+{
+&&, ||, !
+}
+<bit_op>
+{
+&, |, ^, ~, <<, >>
+}
+<assign_op>
+{
+=, +=, -=, *=, /=, %=, <<=, &=, |=
+}
+<bracket>
+{
+\{, \}, (, ), [, ]
+}
+<terminator>
+{
+;
+}
