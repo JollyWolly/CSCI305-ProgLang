@@ -13,25 +13,14 @@
 #include <sstream>
 #include <string>
 #include <vector>
-#include <map>
+#include <Trie>
 
 using namespace std;
 
 class Tokenizer 
 {
     private:
-    struct Trie
-    {
-        struct Trie *child[94]
-        string keyType;
-    };
-
-    void insert(struct Trie *root, string key, string keyType, int lvl)
-    {
-        if (key.length() == lvl)
-            root->keyType = keyType;
-        key[lvl]-'!';
-    }
+ 
     
 
 
@@ -41,7 +30,7 @@ class Tokenizer
 
     public:
     Tokenizer(const string FILE);
-    void printValidTokens();
+    //void printValidTokens();
 
 
     
