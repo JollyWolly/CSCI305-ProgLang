@@ -86,14 +86,16 @@ Tokenizer::Tokenizer(const string FILE)
     }
 
 }
-
+   
 void Tokenizer::addTokens(string tokens, string tokenType)
 {
     istringstream iss(tokens);
     string word;
+    
     while (iss >> word)
     {
-        word.pop_back();
+        if(word.back() == ',')
+            word.pop_back();
         tokenMap.insert(pair<string, string>(word, tokenType));
     }
 }
@@ -105,4 +107,20 @@ void Tokenizer::printValidTokens()
     {
         cout << t.first << '\t' << t.second << endl;
     }
+}
+
+Tokenizer::BST::BST(){
+
+}
+
+Tokenizer::BST::insert(string token, string tokenType)
+{
+    int i = 0;
+    int max = max(token.length(), this->token.length());
+    while (token[i] == this->token[i] && i < max)
+    {
+        i++;
+    }
+    if (token[i] <= this->token[i])
+        l.
 }
