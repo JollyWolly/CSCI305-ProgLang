@@ -97,8 +97,8 @@ void tokenizer::lex(string inputFile){
                 }
 
 
-                //If there's white-space, ignore it.
-                else if (startType == "Whitespace"){
+                //If there's white-space (or unknown character), ignore it.
+                else if (startType == "Whitespace" || startType == "IDK"){
                     start++;
                     end = start-1;
                 }
@@ -188,8 +188,8 @@ string tokenizer::getCharType(char a){
         return "Letter";
     }
 
-    //Case semicolon (terminator):
-    if (b == 59){
+    //Case semicolon (terminator) or comma:
+    if (b == 59 || b == 44){
         return "Terminator";
     }
 

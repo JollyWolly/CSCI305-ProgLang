@@ -8,4 +8,5 @@ assign_op = += -+ *= /= %= <<= &= |=
 bracket { } ( ) [ ]
 quote " '
 terminator ;
-scope :: . :
+comma ,
+scope :: . : ->
