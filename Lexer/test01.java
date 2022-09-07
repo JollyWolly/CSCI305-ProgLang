@@ -1,8 +1,8 @@
 //Single Line Comment
 int x = 233;;
-    int y = 420;
+    int y = 3646;
 
-  int z = 666;
+  int z = 46463714563456;
 
 x++;
 

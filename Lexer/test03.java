@@ -5,3 +5,7 @@ int y
 int x
 string
 bool
+
+
+
+Because there is no closing comment symbol.
